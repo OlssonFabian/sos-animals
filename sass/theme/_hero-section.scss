@@ -1,0 +1,21 @@
+#wrapper-hero{
+	img{
+		width: 100vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	h1{
+		color: yellow;
+		font-size: 170%;
+		position: absolute;
+		display: inline-flex;
+		left: 50%;
+		top: 0;
+		margin-top: 20vh;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 999999999999;
+	}
+}

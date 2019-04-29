@@ -14,6 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="wrapper" id="wrapper-hero">
 
+	<h1><?php bloginfo( 'name' ); ?></h1>
+
 		<?php get_template_part( 'sidebar-templates/sidebar', 'hero' ); ?>
 
 		<?php get_template_part( 'sidebar-templates/sidebar', 'herocanvas' ); ?>
