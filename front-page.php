@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?> <hr>
 					<?php } ?>
 				<?php endwhile; // end of the loop. ?>
-
+				<?php get_template_part( 'global-templates/post-slider'); ?>
 			</main><!-- #main -->
 
 		</div><!-- .row -->

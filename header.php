@@ -79,3 +79,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/jquery.flexslider-min.js"></script>
+<script type="text/javascript">(function($) {
+    $(window).load(function() {
+        $('#slider .flexslider').flexslider({
+               animation: 'slide',
+                slideshowSpeed: 9000,
+                animationSpeed: 900,
+                pauseOnAction: true,
+                pauseOnHover: true,
+                controlNav: false,
+                directionNav: true,
+                controlsContainer: ".flexslider",
+        });
+    });
+})(jQuery)</script>
