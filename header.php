@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <script src="<?php echo get_template_directory_uri();?>/jquery.flexslider-min.js"></script>
 <script type="text/javascript">(function($) {
     $(window).load(function() {
-        $('#slider .flexslider').flexslider({
+        $('.flexslider').flexslider({
                animation: 'slide',
                 slideshowSpeed: 9000,
                 animationSpeed: 900,
@@ -96,3 +96,5 @@ $container = get_theme_mod( 'understrap_container_type' );
         });
     });
 })(jQuery)</script>
+
+

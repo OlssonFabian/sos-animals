@@ -17,14 +17,14 @@ $information = new WP_query([
 
 if ($information->have_posts()){
 ?>
-<section id="wrapper-usps">
-	<div class="wrapper" id="wrapper-usps">
+<section id="wrapper-dogs">
+	<div class="wrapper" id="wrapper-dogs">
 		<div class="col-md">
 			<div class="d-flex justify-content-around">
 		<?php
 	while ($information->have_posts()) {
 		$information->the_post();
-		get_template_part('loop-templates/content' , 'usp');
+		get_template_part('loop-templates/content' , 'dog');
 	} ?>
 </section>
 			</div>

@@ -264,7 +264,25 @@
   .flex-control-thumbs .flex-active {
 	opacity: 1;
 	cursor: default;
-  }
+	}
+	/* ====================================================================================================================
+   * SLIDER IMAGE SIZING
+	 * ====================================================================================================================*/
+	 #slider{
+		div > div > ul > li.slide.flex-active-slide > p{
+			display:flex;
+			justify-content: center;
+		}
+		 h1{
+			 font-size: 5rem;
+		 }
+		 img{
+			 width: 98%;
+		 }
+	 }
+
+
+
   /* ====================================================================================================================
    * RESPONSIVE
    * ====================================================================================================================*/
@@ -277,4 +295,25 @@
 	  opacity: 1;
 	  right: 10px;
 	}
-  }
+	}
+
+	@media (min-width:600px)  {
+		#slider{
+			justify-content: space-evenly;
+			h1{
+				font-size: 5rem;
+			}
+			img{
+				width: 30%;
+				display: inline-block;
+			}
+			p{
+				display: inline-block;
+				margin-left: 3%;
+			}
+			.btn-secondary{
+				display: inline-flex;
+				align-self: end;
+			}
+		}
+	}
