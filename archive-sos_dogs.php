@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The template for displaying archive pages.
@@ -21,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row d-flex justify-content-center">
+		<div class="row">
 
 			<main class="site-main" id="main">
 
@@ -33,26 +32,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
+					<div class="container row d-inline-flex justify-content-between"></div>
+						<?php /* Start the Loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="row d-flex justify-content-between">
-						<?php
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', 'single' );
-						?>
-						</div>
+							<div class="col-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+
+					</div>
 					<?php endwhile; ?>
 
 				<?php else : ?>
 
-
 				<?php endif; ?>
+
 			</main><!-- #main -->
 
 			<!-- The pagination component -->

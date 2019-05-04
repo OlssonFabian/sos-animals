@@ -69,6 +69,7 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 		add_image_size( 'homepage-thumb size', 220, 180,true );
 		add_image_size( 'fullpage-thumb size', 590, 9999, true );
 		add_image_size( 'weird', 250, 250, true );
+		add_image_size( 'hero-size', 1024 , 768, true );
 
 		/*
 		 * Adding support for Widget edit icons in customizer

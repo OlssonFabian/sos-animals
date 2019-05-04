@@ -24,7 +24,7 @@ if ($information->have_posts()){
 		<?php
 	while ($information->have_posts()) {
 		$information->the_post();
-		get_template_part('loop-templates/content' , 'dog');
+		get_template_part('loop-templates/content' , 'single');
 	} ?>
 </section>
 			</div>

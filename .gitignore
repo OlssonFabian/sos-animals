@@ -27,4 +27,5 @@ Thumbs.db
 *.swp
 .idea/
 
-acf-pro.php
+inc/acf/
+inc/acf-pro/

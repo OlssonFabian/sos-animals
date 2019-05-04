@@ -1,6 +1,6 @@
 <?php
 /**
- * Post rendering content according to caller of get_template_part.
+ * Single post partial template.
  *
  * @package understrap
  */
@@ -14,30 +14,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header">
 
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-		<?php endif; ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
 	<div class="entry-content">
 
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
+		<p> <?php _e('born: ', 'understrap'); echo get_field('born'); ?> </p>
+		<p> <?php _e('available in this location: ', 'understrap');  ?>
+		<p></p><?php the_taxonomies()?></p>
+		<p> <?php _e('withers at this current time: ', 'understrap'); echo get_field('withers'); ?> cm </p>
+		<p> <?php _e('weight at this current time: ', 'understrap'); echo get_field('weight'); ?> kg </p>
+		<?php if (get_field('adopted')){
+		?> <p> <?php _e('this dog was adopted: ', 'understrap'); echo get_field('adopted'); ?></p>
+		<?php }
 
-		<?php
+		else{
+			_e('this dog is available for adoption ', 'understrap');
+		}
+
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),

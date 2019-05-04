@@ -18,10 +18,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php if ( is_front_page() || !wp_is_mobile()) : ?>
-	<?php get_template_part( 'global-templates/hero' , 'none' ); ?>
-	<hr>
-<?php endif; ?>
+	<?php get_template_part( 'global-templates/hero2' , 'none' ); ?>
 
 <div class="wrapper" id="page-wrapper">
 
@@ -40,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?> <hr>
 					<?php } ?>
 				<?php endwhile; // end of the loop. ?>
-				<section id="slider-1"><?php get_template_part( 'global-templates/dog-cards'); ?></section>
+				<section id="dog-cards"><?php get_template_part( 'global-templates/dog-cards'); ?></section>
 				<section id="slider-2"><?php get_template_part( 'global-templates/success-slider'); ?></section>
 			</main><!-- #main -->
 
