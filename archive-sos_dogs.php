@@ -32,10 +32,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 					</header><!-- .page-header -->
 						<?php /* Start the Loop */ ?>
-						<div class="container d-flex justify-content-around">
+						<div class="container d-flex flex-wrap justify-content-around">
 						<?php while ( have_posts() ) : the_post(); ?>
 
-							<div class="col-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+							<div class="col-lg-3 col-md-3 col-sm-12"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>
 						</div>
 				<?php else : ?>
@@ -45,10 +45,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</main><!-- #main -->
 
 		</div> <!-- .row -->
-
+<!-- The pagination component -->
+<?php understrap_pagination(); ?>
 	</div><!-- #content -->
-			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
 	</div><!-- #archive-wrapper -->
 
 <?php get_footer(); ?>
