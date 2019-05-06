@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
+
 ?>
 
 <div class="wrapper d-flex" id="archive-wrapper">
@@ -23,17 +24,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<main class="site-main" id="main">
-			<p><?php get_template_part('global-templates/tax-dropdown') ?></p>
-				<?php if ( have_posts() ) : ?>
+
+				<?php if(have_posts()) : ?>
 
 					<header class="page-header">
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						?>
 					</header><!-- .page-header -->
 						<?php /* Start the Loop */ ?>
 						<div class="container d-flex flex-wrap justify-content-around">
-						<?php while ( have_posts() ) : the_post(); ?>
+						<?php while (have_posts() ) : the_post(); ?>
 
 							<div class="col-lg-3 col-md-3 col-sm-12"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>

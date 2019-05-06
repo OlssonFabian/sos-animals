@@ -1,11 +1,7 @@
 <?php
-	// hämta ut alla blogginlägg från kategorin med slug:en 'faq'
 	$accordionItems = new WP_query([
 		'post_type' => 'sos_information',
 		'posts_per_page' => 3,
-		//'meta_key' => 'sos_order',
-		//'orderby' => 'meta_value_num',
-		//'order' => 'ASC'
        ]);
 
 	if ($accordionItems->have_posts()) {

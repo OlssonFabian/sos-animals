@@ -1,119 +1,124 @@
-#wrapper-hero{
-	img{
-		width: 100vw;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
-	@media (min-width: 1281px) {
-		h1{
-			color: orange;
-			font-size: 570%;
-			position: absolute;
-			display: inline-flex;
-			left: 50%;
-			margin-top: 50vh;
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			z-index: 999999999999;
-			}
-		.btn-primary{
-			position: absolute;
-			left: 50%;
-			margin-left: -50px;
-			top: 50%;
-			margin-top: -50px;
-			z-index: 999999999999;
-			margin-top: 70vh;
-		}
-	  }
-	@media (min-width: 320px) and (max-width: 480px) {
-		h1{
-			color: yellow;
-			font-size: 170%;
-			position: absolute;
-			display: inline-flex;
-			left: 50%;
-			top: 0;
-			margin-top: 20vh;
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			z-index: 999999999999;
-			}
-			.btn-primary{
-				position: absolute;
-				z-index: 999999999999;
-				left: 38%;
-				margin-top: 20vh;
-			}
-		}
-	@media (min-width: 768px) and (max-width: 1024px) {
-		h1{
-			color: green;
-			font-size: 570%;
-			position: absolute;
-			display: inline-flex;
-			left: 50%;
-			margin-top: 30vh;
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			z-index: 999999999999;
-			}
-			.btn-primary{
-				position: absolute;
-				z-index: 999999999999;
-				left: 45%;
-				margin-top: 50vh;
-			}
-		}
-	@media (min-width: 1025px) and (max-width: 1280px) {
-		h1{
-			color: blue;
-			font-size: 570%;
-			position: absolute;
-			display: inline-flex;
-			left: 50%;
-			margin-top: 40vh;
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			z-index: 999999999999;
-		}
-		.btn-primary{
-			position: absolute;
-			z-index: 999999999999;
-			left: 45%;
-			margin-top: 55vh;
-		}
-	  }
-}
+		@media (min-width: 320px) and (max-width: 480px) {
+			#hero{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				height: 15rem;
+				width: 100vw;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				background-size: cover;
+				h1{
+					text-align: center;
+					font-size: 4rem;
+					margin-top:20%;
+				}
 
-#hero{
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		height:auto;
-		width: 100vw;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		background-size: cover;
-		h1{
-			text-align: center;
-			font-size: 10rem;
-			margin-top:20%;
-		}
+				h2{
+					text-align: center;
+					font-size: 2rem;
+					margin-top: 2%;
+					margin-bottom:15%;
+				}
 
-		h2{
-			text-align: center;
-			font-size: 5rem;
-			margin-top: 2%;
-			margin-bottom:15%;
+				.btn{
+					justify-self: center;
+					align-self: center;
+				}
+			}
 		}
+		@media (min-width: 768px) and (max-width: 1024px) {
+			#hero{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				height:auto;
+				width: 100vw;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				background-size: cover;
+				h1{
+					text-align: center;
+					font-size: 10rem;
+					margin-top:20%;
+				}
 
-		.btn{
-			justify-self: center;
-			align-self: center;
+				h2{
+					text-align: center;
+					font-size: 5rem;
+					margin-top: 2%;
+					margin-bottom:15%;
+				}
+
+				.btn{
+					justify-self: center;
+					align-self: center;
+				}
+			}
 		}
-}
+		@media (min-width: 1040px) and (max-width: 1280px) {
+			#hero{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				height:auto;
+				width: 100vw;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				background-size: cover;
+				h1{
+					text-align: center;
+					font-size: 10rem;
+					margin-top:20%;
+				}
+
+				h2{
+					text-align: center;
+					font-size: 5rem;
+					margin-top: 2%;
+					margin-bottom:15%;
+				}
+
+				.btn{
+					justify-self: center;
+					align-self: center;
+				}
+			}
+		}
+		@media (min-width: 1281px) {
+			#hero{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				height:auto;
+				width: 100vw;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				background-size: cover;
+				h1{
+					text-align: center;
+					font-size: 10rem;
+					margin-top:20%;
+				}
+
+				h2{
+					text-align: center;
+					font-size: 5rem;
+					margin-top: 2%;
+					margin-bottom:15%;
+				}
+
+				.btn{
+					justify-self: center;
+					align-self: center;
+				}
+			}
+		}
