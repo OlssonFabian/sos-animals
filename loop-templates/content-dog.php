@@ -22,8 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php the_content(); ?>
 		<p> <?php _e('born: ', 'understrap'); echo get_field('born'); ?> </p>
-		<p> <?php _e('available in this location: ', 'understrap');  ?>
-		<p></p><?php the_taxonomies()?></p>
+		<h3> <?php _e('information about the dog: ', 'understrap');  ?> </h3>
+		<p><?php the_taxonomies()?></p>
 		<p> <?php _e('withers at this current time: ', 'understrap'); echo get_field('withers'); ?> cm </p>
 		<p> <?php _e('weight at this current time: ', 'understrap'); echo get_field('weight'); ?> kg </p>
 		<?php if (get_field('adopted')){

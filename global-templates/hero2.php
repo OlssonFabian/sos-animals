@@ -2,7 +2,15 @@
 	<div class="container">
 		<h1><?php the_field('title'); ?></h1>
 		<h2><?php the_field('sub_title'); ?></h2>
-        <a href="<?php the_field('button'); ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"></a>
+		<?php 
+
+		$link = get_field('button');
+
+		if( $link ): ?>
+			
+			<a class="button btn btn-primary" href="<?php echo $link['url']; ?>"><?php _e('Adopt Now!', 'understrap')?></a>
+
+		<?php endif; ?>
 	</div>
 
 	<?php

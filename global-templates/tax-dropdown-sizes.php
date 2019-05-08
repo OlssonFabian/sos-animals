@@ -1,7 +1,7 @@
 <?php
-$categories = get_categories('taxonomy=sos_location');
+$categories = get_categories('taxonomy=sos_size');
  
-  $select = "<select name='location' id='location' class='postform'>n";
+  $select = "<select name='size' id='size' class='postform'>n";
   $select.= "<option value='-1'>Select Location</option>n";
  
   foreach($categories as $category){
@@ -16,10 +16,10 @@ $categories = get_categories('taxonomy=sos_location');
 ?>
  
 <script type="text/javascript"><!--
-    var dropdown = document.getElementById("location");
+    var dropdown = document.getElementById("size");
     function onCatChange() {
         if ( dropdown.options[dropdown.selectedIndex].value != -1 ) {
-            location.href = "<?php echo home_url();?>/location/"+dropdown.options[dropdown.selectedIndex].value+"/";
+            location.href = "<?php echo home_url();?>location/sizes/"+dropdown.options[dropdown.selectedIndex].value+"/";
         }
     }
     dropdown.onchange = onCatChange;
