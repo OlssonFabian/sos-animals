@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content card p-2">
 
 		<?php the_content(); ?>
 		<p> <?php _e('born: ', 'understrap'); echo get_field('born'); ?> </p>
@@ -26,6 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p><?php the_taxonomies()?></p>
 		<p> <?php _e('withers at this current time: ', 'understrap'); echo get_field('withers'); ?> cm </p>
 		<p> <?php _e('weight at this current time: ', 'understrap'); echo get_field('weight'); ?> kg </p>
+		
 		<?php if (get_field('adopted')){
 		?> <p> <?php _e('this dog was adopted: ', 'understrap'); echo get_field('adopted'); ?></p>
 		<?php }

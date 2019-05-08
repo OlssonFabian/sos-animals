@@ -17,8 +17,8 @@ $information = new WP_query([
 
 if ($information->have_posts()){
 ?>
-<section id="wrapper-dogs">
-	<div class="wrapper" id="wrapper-dogs">
+<section id="information">
+	<div class="wrapper" id="wrapper-information">
 		<div class="col-md">
 			<div class="d-flex justify-content-around">
 		<?php
@@ -26,9 +26,9 @@ if ($information->have_posts()){
 		$information->the_post();
 		get_template_part('loop-templates/content' , 'single');
 	} ?>
-</section>
 			</div>
 		</div>
 	</div>
+</section>
 <?php
 }

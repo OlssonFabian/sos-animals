@@ -2,6 +2,8 @@
 	$accordionItems = new WP_query([
 		'post_type' => 'sos_information',
 		'posts_per_page' => 3,
+		'order_by' => 'name',
+		'order' => 'asc',
        ]);
 
 	if ($accordionItems->have_posts()) {
@@ -36,7 +38,7 @@
 		wp_reset_postdata();
 	} else {
 		?>
-			<p><em><?php _e('Sorry, no USPSs found.', 'onepager'); ?></em></p>
+			<p><em><?php _e('Sorry, no accordions found.', 'understrap'); ?></em></p>
 		<?php
 	}
 ?>

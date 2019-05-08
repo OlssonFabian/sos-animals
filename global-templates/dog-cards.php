@@ -1,5 +1,5 @@
 <div class="container information-cards">
-  <div class="row d-flex justify-content-between">
+  <div class="row d-flex justify-content-around">
       <?php
 
 $args = array(

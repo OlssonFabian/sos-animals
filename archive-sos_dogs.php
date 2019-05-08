@@ -32,10 +32,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 					</header><!-- .page-header -->
 						<?php /* Start the Loop */ ?>
-						<div class="container d-flex flex-wrap justify-content-around">
+						<div class="container d-flex flex-wrap justify-content-between">
 						<?php while ( have_posts() ) : the_post(); ?>
 
-							<div class="col-lg-3 col-md-3 col-sm-12"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+							<div class="col-lg-3 col-md-3 col-sm-12 m-1"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>
 						</div>
 				<?php else : ?>
