@@ -23,7 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<main class="site-main" id="main">
-			<p><?php get_template_part('global-templates/tax-dropdown') ?></p>
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
@@ -32,10 +31,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 					</header><!-- .page-header -->
 						<?php /* Start the Loop */ ?>
-						<div class="container d-flex flex-wrap justify-content-between">
+						<div class="container d-flex flex-wrap justify-content-start">
 						<?php while ( have_posts() ) : the_post(); ?>
 
-							<div class="col-lg-3 col-md-3 col-sm-12 m-1"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+							<div class="col-lg-3 col-md-3 col-sm-12 m-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>
 						</div>
 				<?php else : ?>

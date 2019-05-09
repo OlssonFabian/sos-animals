@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 	<?php get_template_part( 'global-templates/hero2' , 'none' ); ?>
-	
+
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
@@ -39,7 +39,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; // end of the loop. ?>
 				<section id="dog-cards"><?php get_template_part( 'global-templates/dog-cards-frontpage'); ?></section>
 				<section id="slider-2"><?php get_template_part( 'global-templates/success-slider'); ?></section>
-				<section id="adopt"><?php echo do_shortcode('[wpforms id="90" title="false" description="false"]') ?> </section>
+				<section id="adopt" class="d-flex col-12 justify-content-center">
+					<div class="co-l2">
+						<?php echo do_shortcode('[wpforms id="90" title="false" description="false"]') ?>
+					</div>
+				</section>
 			</main><!-- #main -->
 
 		</div><!-- .row -->

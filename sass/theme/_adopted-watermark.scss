@@ -1,0 +1,14 @@
+.info-card {
+    .img-wrapper {
+        position: relative;
+
+        .img-adopted {
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

@@ -69,7 +69,7 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 		add_image_size( 'homepage-thumb size', 220, 180,true );
 		add_image_size( 'fullpage-thumb size', 590, 9999, true );
 		add_image_size( 'single', 275, 275, true );
-		add_image_size( 'weird', 250, 250, true );
+		add_image_size( 'card-size', 250, 250, true );
 		add_image_size( 'hero-size', 1024 , 768, true );
 
 		/*
@@ -97,7 +97,7 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 
 		// Set up the WordPress Theme logo feature.
 		add_theme_support( 'custom-logo' );
-		
+
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 

@@ -12,7 +12,7 @@ $the_query = new WP_Query($args);
 while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
 <div class="card info-card" style="width: 18rem;">
-  <?php the_post_thumbnail('weird'); ?>
+  <?php the_post_thumbnail('card-size'); ?>
   <div class="card-body">
     <h5 class="card-title"><?php the_title(); ?> </h5>
     <p class="card-text"> <?php the_excerpt(); ?></p>

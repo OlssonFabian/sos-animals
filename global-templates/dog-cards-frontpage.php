@@ -1,15 +1,15 @@
 <div class="container information-cards">
-  <div class="row d-flex justify-content-between">
+  <div class="row d-flex justify-content-center m-2">
       <?php
 
-$value = intval(get_field('dogs_shown_on_frontpage', 'option')); 
+$value = intval(get_field('dogs_shown_on_frontpage', 'option'));
 
 if(get_field('dogs_shown_on_frontpage', 'option')) {
-    $value = intval(get_field('dogs_shown_on_frontpage', 'option')); 
+    $value = intval(get_field('dogs_shown_on_frontpage', 'option'));
 } else {
     $value = -1;
 }
- 
+
 
 $args = array(
   'post_type' => 'sos_dogs',

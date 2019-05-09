@@ -18,6 +18,11 @@ $understrap_includes = array(
 	'/pagination.php',                      // Custom pagination for this theme.
 	'/hooks.php',                           // Custom hooks.
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
+	'/cpt.php',								// Make custom post type built in.
+	'/cpt-tax.php',							// Make Custom Tax built in.
+	'/acf.php',								// Make acf-fields built in
+	'/acf-field-groups.php',				// Loads Field Groups.
+	'/wp-forms.php',							// Make WP-Forms Built in.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
@@ -25,8 +30,7 @@ $understrap_includes = array(
 	'/woocommerce.php',                     // Load WooCommerce functions.
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
-	'/acf-options.php',
-	//'/slick-slider.php',                    // Load Slick Slider.
+	'/acf-options.php',						// Make theme post numb option available.
 );
 
 foreach ( $understrap_includes as $file ) {
