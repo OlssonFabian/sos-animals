@@ -16,6 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+$args = array (
+	'orderby' => 'publish_date',
+	'order' => 'DESC'
+);
 ?>
 
 	<?php get_template_part( 'global-templates/hero2' , 'none' ); ?>
@@ -28,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post($args); ?>
 					<?php if(wp_is_mobile()){
 						get_template_part( 'global-templates/accordion-info'); // if mobile get accordion
 					}
