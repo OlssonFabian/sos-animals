@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<main class="site-main" id="main">
-			<p><?php get_template_part('global-templates/tax-dropdown-sizes') ?></p>
+
 				<?php if(have_posts()) : ?>
 
 					<header class="page-header">

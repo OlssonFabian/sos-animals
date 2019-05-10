@@ -46,7 +46,7 @@ $interval = $dogBorn->diff($currentDate);
 
 	<?php if ( get_post_meta( $post->ID, 'weight', true ) ) { ?>
 
-        <p> <?php _e('weight at this current time: ', 'understrap'); echo get_field('weight'); ?> cm </p>
+        <p> <?php _e('weight at this current time: ', 'understrap'); echo get_field('weight'); ?> kg </p>
 
     <?php } else {
 
