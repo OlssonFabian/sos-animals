@@ -16,14 +16,13 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
-<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
-<h1> <?php echo $term->name; // will show the name ?> </h1>
 
 <div class="wrapper d-flex" id="archive-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1" >
 
 		<div class="row">
+			<div class="col-12"> <h1><?php echo get_the_archive_title(); ?></h1> </div>
 
 			<main class="site-main" id="main">
 			<p><?php get_template_part('global-templates/tax-dropdown-sizes') ?></p>

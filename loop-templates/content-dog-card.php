@@ -10,7 +10,7 @@
 
 	<div class="card-body">
 		<h5 class="card-title"><?php the_title(); ?> </h5>
-		<p> <?php the_field('gender'); ?> </p>
+		<p> <?php _e('sex', 'understrap'); the_field('gender'); ?> </p>
 		<p class="card-text"> <?php the_excerpt(); ?></p>
 	</div>
 </div>
