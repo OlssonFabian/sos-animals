@@ -29,6 +29,7 @@ $interval = $dogBorn->diff($currentDate);
 	<div class="entry-content card p-2">
 
 		<?php the_content(); ?>
+		<p> <?php the_field('gender'); ?> </p>
 		<p> <?php _e('born: ', 'understrap'); echo $dogBorn->format('d M Y') . '  (' . $interval->format('%y years %m months and %d days') . ')';?> </p>
 		<h3> <?php _e('information about the dog: ', 'understrap');  ?> </h3>
 		<p><?php the_taxonomies()?></p>

@@ -16,6 +16,8 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
+<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
+<h1> <?php echo $term->name; // will show the name ?> </h1>
 
 <div class="wrapper d-flex" id="archive-wrapper">
 
