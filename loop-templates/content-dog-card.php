@@ -1,4 +1,4 @@
-<div class="card info-card m-2" style="width: 18rem;">
+<div class="card info-card">
 	<div class="img-wrapper">
 		<?php the_post_thumbnail('weird'); ?>
 		<?php

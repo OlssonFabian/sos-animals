@@ -20,31 +20,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper d-flex" id="archive-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1" >
-
+	<h1><?php echo get_the_archive_title(); ?></h1>
 		<div class="row">
-			<div class="col-12"> <h1><?php echo get_the_archive_title(); ?></h1> </div>
-			<main class="site-main" id="main">
 				<?php if(have_posts()) : ?>
-
-					<header class="page-header">
-					</header><!-- .page-header -->
-						<?php /* Start the Loop */ ?>
-						<div class="container d-flex flex-wrap justify-content-start">
-						<?php while (have_posts() ) : the_post(); ?>
-
-							<div class="col-lg-3 col-md-5 col-sm-12 m-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+					<?php while (have_posts() ) : the_post(); ?>
+					<div class="col-lg-4 col-md-4 col-sm-6 mb-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>
-						</div>
-				<?php else : ?>
-
-				<?php endif; ?>
-
-			</main><!-- #main -->
-
-		</div> <!-- .row -->
-<!-- The pagination component -->
-<?php understrap_pagination(); ?>
-	</div><!-- #content -->
+					<?php else : ?>
+					<?php endif; ?>
+			</div> <!-- .row -->
+			<!-- The pagination component -->
+			<?php understrap_pagination(); ?>
+		</div><!-- #content -->
 	</div><!-- #archive-wrapper -->
 
 <?php get_footer(); ?>
