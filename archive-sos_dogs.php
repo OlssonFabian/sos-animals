@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="container d-flex flex-wrap justify-content-start">
 						<?php while ( have_posts() ) : the_post(); ?>
 
-							<div class="col-lg-3 col-md-3 col-sm-12 m-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-3"> <?php get_template_part( 'loop-templates/content', 'dog-card' );?> </div>
 					<?php endwhile; ?>
 						</div>
 				<?php else : ?>
